@@ -530,7 +530,7 @@ textarea:focus {
 /* LABEL ======================================= */
 label {
   color: rgba(255,255,255,0.40);
-  font-size: 1 rem;
+  font-size: 14px;
   font-weight: 500;
   position: absolute;
   pointer-events: none;
