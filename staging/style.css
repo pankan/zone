@@ -597,7 +597,10 @@ textarea:focus~.bar:after {
 .medium{
   font-family: 'Medium', sans-serif;
 }
-.card a{
+.card a,
+.card a:visited,
+.card a:focus,
+.card a:active{
   color: #2D50FF;
 }
 .card a:hover{
