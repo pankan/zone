@@ -6,7 +6,6 @@
   font-family: 'Medium';
   src: url('./fonts/Medium.ttf') format('truetype');
 }
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 html {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -307,7 +306,7 @@ height: 12px;
   top: 40px;
 }
 .digital-hours{
-  font-family: 'JetBrains Mono', monospace;
+  font-family: monospace;
   font-weight: 700;
   font-size: 72px;
   color: #2D50FF;
@@ -315,7 +314,7 @@ height: 12px;
 }
 .digital-minutes{
   opacity: 0.6;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: monospace;
   font-weight: 100;
   font-size: 72px;
   color: #FFFFFF;
@@ -328,7 +327,7 @@ height: 12px;
 }
 .date-display{
   opacity: 0.5;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: monospace;
   font-weight: 200;
   font-size: 18px;
   color: #FFFFFF;
