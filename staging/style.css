@@ -33,6 +33,17 @@ a, a:hover, a:focus, a:visited, a:active{
 button{
   cursor: pointer;
 }
+ul{
+  padding-left: 20px;
+}
+ul li{
+  font-size: 14px;
+  line-height: 24px;
+}
+ul li::before{
+  content: '○';
+  margin-right: 8px;
+}
 
 body {
   min-height: 100vh;
@@ -121,8 +132,8 @@ body {
   content: "";
   position: absolute;
   top: -67px;
-  right: 0;
-  width: 698px;
+  left: 67px;
+  width: 848px;
   height: 67px;
   background-color: rgba(255,255,255,0.07);
   border-radius: 12px 12px 0 0;
@@ -139,7 +150,7 @@ width: 12px;
 height: 12px;
 position: absolute;
 top:-12px;
-left: 205px;
+left: 55px;
 }
 .curve:after{
 content: '';
@@ -351,8 +362,8 @@ height: 12px;
   content: "";
   position: absolute;
   top: -67px;
-  right: 0;
-  width: 448px;
+  left: 67px;
+  width: 598px;
   height: 67px;
   background-color: rgba(255,255,255,0.07);
   border-radius: 12px 12px 0 0;
@@ -389,7 +400,7 @@ height: 12px;
   margin-top: -80px;
 }
 .content{
-  padding-top: 30px;
+  margin-top: 30px;
   position: relative;
 }
 .title-card .content {
@@ -574,4 +585,12 @@ input:focus~.bar:after,
 textarea:focus~.bar:before,
 textarea:focus~.bar:after {
   width: 100%;
+}
+.y-scroll{
+  overflow-y: scroll;
+}
+.bottom-btn{
+  position: absolute;
+  right: 62px;
+  bottom: -42px;
 }
