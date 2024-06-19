@@ -506,7 +506,7 @@ p {
 
 .input-group 			  { 
   position:relative; 
-  margin-top: 36px; 
+  margin-top: 40px; 
 }
 
 input, textarea {
@@ -514,7 +514,7 @@ input, textarea {
   color: #fff;
   font-family: 'Light', sans-serif;
   font-size: 14px;
-  padding: 10px 10px 10px 5px;
+  padding: 8px;
   display: block;
   width: 100%;
   border: none;
