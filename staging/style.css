@@ -1,0 +1,578 @@
+@font-face {
+  font-family: 'Light';
+  src: url('./fonts/Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Medium';
+  src: url('./fonts/Medium.ttf') format('truetype');
+}
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: inherit;
+}
+*:before, *:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  overflow: hidden;
+}
+
+a, a:hover, a:focus, a:visited, a:active{
+  font-size: 14px;
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+button{
+  cursor: pointer;
+}
+
+body {
+  min-height: 100vh;
+  background: #000;
+  font-family: 'Light', sans-serif;
+  color: #fff;
+}
+.circle{
+  background: rgba(45,80,255,0.50);
+  height: 60vh;
+  aspect-ratio: 1;
+  border-radius: 30vh;
+  position: absolute;
+  top: 20vh;
+  left: -35vh;
+  z-index: 1;
+  filter: blur(50px);
+}
+.wrapper{
+  background: rgba(255,255,255,0.07);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+  position: absolute;
+}
+.container{
+  max-width: 1200px;
+  height: 100vh;
+  padding: 40px 40px 0 40px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.navbar{
+  width: 185px;
+  height: 433px;
+}
+.nav{
+  margin-top: 120px;
+}
+.nav .item{
+  opacity: 0.7;
+  font-size: 16px;
+  color: #FFFFFF;
+  margin: 18px 0;
+  position: relative;
+  transition: all 0.3s ease
+}
+.nav .item:hover{
+  padding-left: 10px;
+  opacity: .9;
+  transition: all 0.3s ease;
+}
+.nav .active{
+  font-family: 'Medium', sans-serif;
+  opacity: 1;
+  padding-left: 10px;
+  transition: all 0.3s ease
+}
+.nav .active::before{
+  content: '';
+  width: 4px;
+  height: 4px;
+  border-radius: 2px;
+  top: 6px;
+  left: 0;
+  background: #2D50FF;
+  position: absolute;
+}
+.title-card {
+  background-color: rgba(255,255,255,0.07);
+  position: relative;
+  width: 915px;
+  height: 140px;
+  left: 245px;
+  border-radius: 12px 0 12px 12px !important;
+  margin-top: 68px;
+}
+
+.title-card::before {
+  content: "";
+  position: absolute;
+  top: -67px;
+  right: 0;
+  width: 698px;
+  height: 67px;
+  background-color: rgba(255,255,255,0.07);
+  border-radius: 12px 12px 0 0;
+}
+.contact-card{
+  left: 245px;
+  top: 268px;
+  width: 375px;
+  height: 505px;
+}
+.curve{
+background: rgba(255,255,255,0.07);
+width: 12px;
+height: 12px;
+position: absolute;
+top:-12px;
+left: 205px;
+}
+.curve:after{
+content: '';
+position: absolute;
+border-radius: 0% 100% 100% 0% / 100% 0% 100% 0%;
+background: #121212;
+width: 12px;
+height: 12px;
+}
+.curve-bottom{
+background: rgba(255,255,255,0.07);
+width: 12px;
+height: 12px;
+position: absolute;
+bottom: -12px;
+right: 40px;
+}
+.curve-bottom:after{
+content: '';
+position: absolute;
+border-radius: 100% 0% 0% 100% / 100% 0% 100% 0% ;
+background: #121212;
+width: 12px;
+height: 12px;
+}
+.tl-card{
+  width: 375px;
+  height: 205px;
+  left: 245px;
+  top: 268px;
+}
+.job-card{
+  border: 1px solid #2D50FF;
+}
+.job-card::after{
+  content: 'HIRING';
+  font-family: 'Medium', sans-serif;
+  background-color: #2D50FF;
+  border-top-left-radius: 11px;
+  border-bottom-right-radius: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 5px 8px;
+}
+.jc{
+  width: 280px;
+  height: 280px;
+  top: 493px;
+}
+.jc-2{
+  left: 340px;
+}
+.cv-card{
+  width: 270px;
+  left: 640px;
+  height: 228px;
+  border-bottom-left-radius: 0 !important;
+}
+.cv-card::after,
+.form-card::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -52px;
+  width: 218px;
+  height: 52px;
+  border-radius: 0 0 12px 12px;
+  background-color: rgba(255,255,255,0.07);
+}
+.form-card{
+  width: 270px;
+  height: 453px;
+  top: 268px;
+  left: 640px;
+  border-bottom-left-radius: 0 !important;
+}
+.track-card{
+  width: 230px;
+  height: 205px;
+  top: 268px;
+  right: 40px;
+}
+.footer{
+  width: 230px;
+  height: 280px;
+  top: 493px;
+  right: 40px;
+}
+.pos-abs{
+  position: absolute;
+}
+.card{
+  background: rgba(255,255,255,0.07);
+  border-radius: 12px;
+  padding: 20px;
+}
+.outline-card{
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.40);
+  border-radius: 12px;
+}
+.card-title{
+  font-family: 'Medium', sans-serif;
+  font-size: 22px;
+  line-height: 28px;
+}
+.clock-wrapper{
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+.clock {
+  grid-column: 2/3;
+  grid-row: 1/3;
+  width: 12rem;
+  height: 12rem;
+  justify-self: center;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  opacity: .2;
+}
+.clock .hand {
+  position: absolute;
+  transform-origin: bottom;
+  bottom: 6rem;
+  border-radius: 2px;
+  z-index: 200;
+}
+.clock .hours {
+  width: 4px;
+  height: 56px;
+  background: #121212;
+  border: 1px solid #FFFFFF;
+}
+.clock .minutes {
+  width: 3px;
+  height: 77px;
+  background: #121212;
+  border: 1px solid #FFFFFF;
+}
+.clock .seconds {
+  width: 1px;
+  height: 68px;
+  background: #ffffff;
+}
+.clock .point {
+  position: absolute;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  z-index: 300;
+  background: #121212;
+  border: 1px solid #FFFFFF;
+}
+.digital-clock{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 20px;
+  top: 40px;
+}
+.digital-hours{
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  font-size: 72px;
+  color: #2D50FF;
+  text-align: right;
+}
+.digital-minutes{
+  opacity: 0.6;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 100;
+  font-size: 72px;
+  color: #FFFFFF;
+  text-align: right;
+}
+.copy{
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+.date-display{
+  opacity: 0.5;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 200;
+  font-size: 18px;
+  color: #FFFFFF;
+  text-align: right;
+  position: absolute;
+  right: 25px;
+  bottom: 70px;
+}
+.full-mid-card{
+  width: 665px;
+  height: 613px;
+  left: 245px;
+  background-color: rgba(255,255,255,0.07);
+  position: relative;
+  border-radius: 12px 0 12px 0 !important;
+  margin-top: 68px;
+  position: absolute;
+}
+
+.full-mid-card::before {
+  content: "";
+  position: absolute;
+  top: -67px;
+  right: 0;
+  width: 448px;
+  height: 67px;
+  background-color: rgba(255,255,255,0.07);
+  border-radius: 12px 12px 0 0;
+}
+.full-mid-card::after {
+  content: "";
+  position: absolute;
+  bottom: -52px;
+  left: 0;
+  width: 613px;
+  height: 52px;
+  background-color: rgba(255,255,255,0.07);
+  border-radius: 0 0 12px 12px;
+}
+.third-mid-card{
+  width: 665px;
+  height: 205px;
+  left: 245px;
+  top: 268px;
+}
+.blue-dot{
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  background-color: #2D50FF;
+  position: absolute;
+  bottom: -30px;
+  right: 20px;
+}
+
+.title{
+  font-family: 'Medium', sans-serif;
+  font-size: 46px;
+  margin-top: -80px;
+}
+.content{
+  padding-top: 30px;
+  position: relative;
+}
+.title-card .content {
+  height: calc(100% + 26px);
+}
+p {
+  font-family: 'Light', sans-serif;
+  font-size: 14px;
+  color: #FFFFFF;
+  line-height: 24px;
+}
+.content p {
+  margin-bottom: 12px;
+}
+.d-flex {
+  display: flex;
+}
+.gap-8{
+  gap: 8px;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-col {
+  flex-direction: column;
+}
+.jc-between{
+  justify-content: space-between;
+}
+.ai-center{
+  align-items: center;
+}
+.ai-start{
+  align-items: flex-start;
+}
+.mt-24{
+  margin-top: 24px;
+}
+.mt-18{
+  margin-top: 18px;
+}
+.mt-12{
+  margin-top: 12px;
+}
+.mr-44 {
+  margin-right: 44px;
+}
+.float-right{
+  float: right;
+}
+.w-100{
+  width: 100%;
+}
+.h-100{
+  height: 100%;
+}
+.role{
+  font-family: 'Medium', sans-serif;
+  font-size: 22px;
+  line-height: 28px;
+  margin-top: 18px;
+}
+.exp{
+  margin-top: 8px;
+}
+.logo {
+  margin-top: 12px;
+}
+.desc{
+  position: relative;
+}
+.more{
+  font-family: 'Medium', sans-serif;
+  color: #5370F9;
+  position: absolute;
+  right: 0;
+  bottom: 4px;
+}
+.btn-ghost{
+  font-family: 'Medium', sans-serif;
+  font-size: 14px;
+  color: #5370F9;
+  border: 1px solid #2D50FF;
+  border-radius: 4px;
+  padding: 12px 20px;
+  background: transparent;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 101;
+}
+.btn-ghost:hover{
+  color: #fff;
+  border-color: #fff;
+  transition: all 0.3s ease;
+}
+.btn-grad{
+  font-family: 'Medium', sans-serif;
+  font-size: 14px;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 20px;
+  background-image: linear-gradient(180deg, #3454ED 0%, #5370F9 100%);
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 101;
+}
+.btn-grad:hover{
+  color: #fff;
+  border-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.input-group 			  { 
+  position:relative; 
+  margin-top: 36px; 
+}
+
+input, textarea {
+  background: transparent;
+  color: #fff;
+  font-family: 'Light', sans-serif;
+  font-size: 14px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgba(255,255,255,0.40);
+  resize: none;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+/* LABEL ======================================= */
+label {
+  color: rgba(255,255,255,0.40);
+  font-size: 1 rem;
+  font-weight: 500;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+}
+
+/* active state */
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label {
+  top: -20px;
+  font-size: 0.815rem;
+  font-weight: 500;
+  color: #2D50FF;
+}
+
+/* BOTTOM BARS ================================= */
+.bar {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.bar:before,
+.bar:after {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  position: absolute;
+  background: #2D50FF;
+  transition: 0.2s ease all;
+}
+
+
+/* active state */
+input:focus~.bar:before,
+input:focus~.bar:after,
+textarea:focus~.bar:before,
+textarea:focus~.bar:after {
+  width: 100%;
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="33px" viewBox="0 0 32 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>pin</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="contact" transform="translate(-261, -641)">
+            <g id="Group" transform="translate(245, 268)">
+                <g id="pin" transform="translate(16, 373)">
+                    <rect id="bb" x="0" y="1" width="32" height="32"></rect>
+                    <path d="M15.5563492,5.55634919 C18.3177729,5.55634919 20.8177729,6.67563731 22.627417,8.48528137 C24.4370611,10.2949254 25.5563492,12.7949254 25.5563492,15.5563492 L25.5563492,24.5563492 C25.5563492,24.8324916 25.4444204,25.0824916 25.263456,25.263456 C25.0824916,25.4444204 24.8324916,25.5563492 24.5563492,25.5563492 L15.5563492,25.5563492 C12.7949254,25.5563492 10.2949254,24.4370611 8.48528137,22.627417 C6.67563731,20.8177729 5.55634919,18.3177729 5.55634919,15.5563492 C5.55634919,12.7949254 6.67563731,10.2949254 8.48528137,8.48528137 C10.2949254,6.67563731 12.7949254,5.55634919 15.5563492,5.55634919 Z" id="Rectangle" stroke="#4F4F4F" stroke-width="2" transform="translate(15.5563, 15.5563) rotate(45) translate(-15.5563, -15.5563)"></path>
+                    <rect id="Rectangle" stroke="#4F4F4F" stroke-width="2" transform="translate(15.5563, 15.5563) rotate(45) translate(-15.5563, -15.5563)" x="12.5563492" y="12.5563492" width="6" height="6" rx="3"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
