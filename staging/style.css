@@ -594,3 +594,12 @@ textarea:focus~.bar:after {
   right: 62px;
   bottom: -42px;
 }
+.medium{
+  font-family: 'Medium', sans-serif;
+}
+.card a{
+  color: #2D50FF;
+}
+.card a:hover{
+  color: #fff;
+}
