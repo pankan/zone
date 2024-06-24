@@ -228,6 +228,14 @@ height: 12px;
   left: 640px;
   border-bottom-left-radius: 0 !important;
 }
+.form-card-wide {
+  left: 245px;
+  top: 268px;
+  width: 665px;
+}
+.form-card-wide::after {
+  width: 613px;
+}
 .track-card{
   width: 230px;
   height: 205px;
@@ -435,6 +443,9 @@ p {
 }
 .ai-start{
   align-items: flex-start;
+}
+.mt-30{
+  margin-top: 30px;
 }
 .mt-24{
   margin-top: 24px;
