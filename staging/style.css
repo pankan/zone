@@ -51,16 +51,28 @@ body {
   font-family: 'Light', sans-serif;
   color: #fff;
 }
+@keyframes rotate {
+  0% {
+      transform: rotate(0deg);
+  }
+
+  100% {
+      transform: rotate(360deg);
+  }
+}
 .circle{
   background: rgba(45,80,255,0.50);
   height: 60vh;
   aspect-ratio: 1;
-  border-radius: 30vh;
+  border-radius: 40% 60% 25% 75% / 40% 70% 30% 60% ;
   position: absolute;
   top: 20vh;
   left: -35vh;
   z-index: 1;
   filter: blur(50px);
+  --speed: 30s;
+  --easing: ease-in-out;
+  animation: rotate var(--speed) var(--easing) alternate infinite;
 }
 .wrapper{
   background: rgba(255,255,255,0.07);
