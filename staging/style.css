@@ -150,6 +150,12 @@ body {
   background-color: rgba(255,255,255,0.07);
   border-radius: 12px 12px 0 0;
 }
+.title-mid{
+  width: 665px;
+}
+.title-mid::before{
+  width: 598px;
+}
 .contact-card{
   left: 245px;
   top: 268px;
@@ -253,6 +259,18 @@ height: 12px;
   height: 205px;
   top: 268px;
   right: 40px;
+}
+.track-card-0{
+  width: 230px;
+  height: 207px;
+  top: 41px;
+  right: 40px;
+}
+.fe-card{
+  width: 270px;
+  height: 205px;
+  top: 268px;
+  right: 290px;
 }
 .footer{
   width: 230px;
@@ -455,6 +473,9 @@ p {
 }
 .ai-start{
   align-items: flex-start;
+}
+.mt-42{
+  margin-top: 42px;
 }
 .mt-30{
   margin-top: 30px;
